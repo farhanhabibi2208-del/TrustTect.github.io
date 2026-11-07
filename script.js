@@ -181,11 +181,11 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   if (!cart.length) return;
   const lines = cart.map(item => `- ${item.name} (${item.quantity} x ${rupiah(item.price)}) = ${rupiah(item.price * item.quantity)}`);
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const message = `Halo ReTech, saya ingin memesan produk berikut:\\n\\n${lines.join("\\n")}\\n\\nEstimasi total: ${rupiah(total)}\\n\\nMohon konfirmasi ketersediaan stok dan langkah selanjutnya.`;
+  const message = `Halo TrustTech, saya ingin memesan produk berikut:\\n\\n${lines.join("\\n")}\\n\\nEstimasi total: ${rupiah(total)}\\n\\nMohon konfirmasi ketersediaan stok dan langkah selanjutnya.`;
   window.open(whatsappLink(message), "_blank", "noopener");
 });
 
-document.getElementById("mainWhatsapp").href = whatsappLink("Halo ReTech, saya ingin bertanya tentang produk elektronik bekas yang tersedia.");
+document.getElementById("mainWhatsapp").href = whatsappLink("Halo TrustTech, saya ingin bertanya tentang produk elektronik bekas yang tersedia.");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const menuToggle = document.getElementById("menuToggle");
