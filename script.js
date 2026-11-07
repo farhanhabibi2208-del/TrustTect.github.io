@@ -5,31 +5,37 @@ const products = [
     id: 1, name: "Laptop Lenovo ThinkPad", category: "Laptop",
     description: "Core i5 • RAM 8GB • SSD 256GB • Kondisi baik",
     price: 3250000, condition: "Kondisi baik", visual: "laptop", badge: "Pilihan populer"
+    image: "Lenovo ThinkPad T14 Gen 5 Business Laptop 14_ FHD+ IPS, Intel Ultra 5 125U, 16GB DDR5 RAM, 51___.jpg"
   },
   {
     id: 2, name: "Samsung Galaxy A52", category: "Smartphone",
     description: "RAM 8GB • Memori 128GB • Fungsi normal",
     price: 1850000, condition: "Kondisi baik", visual: "phone", badge: "Harga menarik"
+    image: "Download Gcam for Samsung Galaxy A52 (Google___.jpg"
   },
   {
     id: 3, name: "iPad Generasi 9", category: "Tablet",
     description: "Memori 64GB • Wi-Fi • Cocok untuk belajar",
     price: 2950000, condition: "Kondisi baik", visual: "tablet", badge: "Siap pakai"
+    image: "Apple iPad (9th Generation) Price__$248_39.jpg"
   },
   {
     id: 4, name: "Laptop ASUS VivoBook", category: "Laptop",
     description: "Core i3 • RAM 8GB • SSD 256GB",
     price: 2850000, condition: "Kondisi baik", visual: "laptop", badge: "Value deal"
+    image: "Laptop Asus Vivobook 14.jpg"
   },
   {
     id: 5, name: "Xiaomi Redmi Note 11", category: "Smartphone",
     description: "RAM 6GB • Memori 128GB • Layar AMOLED",
     price: 1450000, condition: "Kondisi baik", visual: "phone", badge: "Hemat"
+    image: "HP Xiaomi Redmi Note 11 Ram 4_128 GB dan 6_128 GB Garansi Resmi Twilight Blue - 4_128 GB.jpg"
   },
   {
     id: 6, name: "Samsung Galaxy Tab A8", category: "Tablet",
     description: "Memori 64GB • Layar 10.5 inci",
     price: 1750000, condition: "Kondisi baik", visual: "tablet", badge: "Pilihan harian"
+    image: "Samsung Galaxy Tab A8, 10_5-Inch Android Computer Tablet, 64GB, 4GB RAM, Lte, Wifi, Bluetooth___.jpg"
   }
 ];
 
