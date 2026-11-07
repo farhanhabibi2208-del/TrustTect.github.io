@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temukan laptop, smartphone, dan tablet bekas berkualitas dengan harga bersahabat.">
+  <title>ReTech — Elektronik Bekas Berkualitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#"><span class="brand-mark">R</span> retech<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#produk">Produk</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#tentang">Tentang Kami</a>
+        <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Buka keranjang">Keranjang <span id="cartCount">0</span></button>
+        <a class="nav-contact" href="#kontak">Hubungi Kami <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-heading">
+        <div><span class="eyebrow">PESANAN KAMU</span><h2 id="cartTitle">Keranjang belanja</h2></div>
+        <button class="cart-close" id="cartClose" type="button" aria-label="Tutup keranjang">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Estimasi total</span><strong id="cartTotal">Rp0</strong></div>
+        <p>Pesanan akan dikirim ke WhatsApp untuk konfirmasi stok dan detail pembayaran.</p>
+        <button class="btn btn-primary checkout-btn" id="checkoutButton" type="button">Lanjutkan ke WhatsApp <span>↗</span></button>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="pulse"></span> SMARTER CHOICE, BETTER PRICE</span>
+          <h1>Teknologi hebat,<br><span>harga lebih dekat.</span></h1>
+          <p>Temukan laptop, smartphone, dan tablet bekas pilihan. Sudah melalui pengecekan agar kamu bisa belanja dengan lebih tenang.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#produk">Jelajahi Produk <span>↗</span></a>
+            <a class="btn btn-quiet" href="#tentang">Kenali ReTech</a>
+          </div>
+          <div class="hero-note"><span class="check">✓</span> Pilihan terkurasi · Harga transparan · Respons cepat</div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="device-card laptop-card">
+            <div class="laptop-screen"><div class="screen-orb"></div><span>re<span>tech</span>.</span></div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="float-tag tag-top"><span>✦</span> Pilihan berkualitas</div>
+          <div class="float-tag tag-bottom"><strong>Lebih hemat.</strong><br>Lebih bermanfaat.</div>
+          <div class="visual-caption">GIVE TECH A SECOND LIFE.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-items">
+        <div><strong>01</strong><span>Produk pilihan</span></div>
+        <div><strong>02</strong><span>Deskripsi transparan</span></div>
+        <div><strong>03</strong><span>Konsultasi mudah</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="produk">
+      <div class="section-heading">
+        <div><span class="eyebrow">KOLEKSI KAMI</span><h2>Temukan perangkat<br>yang kamu butuhkan.</h2></div>
+        <p>Perangkat elektronik bekas dengan detail kondisi dan harga yang jelas.</p>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Semua">Semua</button>
+          <button class="filter" data-category="Laptop">Laptop</button>
+          <button class="filter" data-category="Smartphone">Smartphone</button>
+          <button class="filter" data-category="Tablet">Tablet</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari produk..."></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="catalog-hint">* Produk di atas adalah contoh. Ubah data produk di file <code>script.js</code> sesuai stok tokomu.</p>
+    </section>
+
+    <section class="feature-section" id="keunggulan">
+      <div class="container feature-grid">
+        <div><span class="eyebrow">KENAPA RETECH?</span><h2>Belanja lebih yakin,<br>tanpa ribet.</h2><p>Kami percaya perangkat bekas tetap punya banyak manfaat. Karena itu, informasi produk dibuat jelas agar kamu bisa memilih sesuai kebutuhan.</p><a class="text-link" href="#kontak">Tanyakan kebutuhanmu <span>↗</span></a></div>
+        <div class="feature-list">
+          <article><span class="feature-icon">✓</span><div><h3>Informasi apa adanya</h3><p>Kondisi, spesifikasi, dan catatan produk ditampilkan secara terbuka.</p></div></article>
+          <article><span class="feature-icon">⌕</span><div><h3>Pilihan sesuai kebutuhan</h3><p>Temukan perangkat untuk belajar, bekerja, maupun aktivitas harian.</p></div></article>
+          <article><span class="feature-icon">↗</span><div><h3>Kontak langsung</h3><p>Konsultasikan ketersediaan dan detail produk melalui WhatsApp.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="tentang">
+      <div class="about-art"><div class="about-shape"><span>R.</span></div><small>SECOND LIFE<br>NEW POSSIBILITIES</small></div>
+      <div class="about-copy"><span class="eyebrow">TENTANG RETECH</span><h2>Perangkat lama,<br>kesempatan baru.</h2><p>ReTech hadir untuk membantu lebih banyak orang mendapatkan perangkat teknologi dengan harga yang lebih terjangkau. Kami mengutamakan komunikasi yang jelas dan pengalaman belanja yang praktis.</p><p class="about-small">Nama, cerita, dan identitas toko ini bisa kamu sesuaikan dengan bisnismu.</p></div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+      <div class="container contact-inner">
+        <div><span class="eyebrow">ADA YANG INGIN DITANYAKAN?</span><h2>Yuk, temukan perangkat<br>yang pas untukmu.</h2><p>Hubungi kami untuk cek stok, tanya spesifikasi, atau konsultasi sebelum membeli.</p></div>
+        <a class="btn btn-light" id="mainWhatsapp" href="#" target="_blank" rel="noopener">Chat via WhatsApp <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand brand-footer" href="#"><span class="brand-mark">R</span> retech<span class="brand-dot">.</span></a><p>© <span id="year"></span> ReTech. Pilihan teknologi yang lebih bijak.</p><a href="#produk">Kembali ke atas ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
