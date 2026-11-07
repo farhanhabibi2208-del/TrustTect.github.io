@@ -66,11 +66,15 @@ function renderProducts() {
   }
 
   productGrid.innerHTML = filtered.map(product => `
-    <article class="product-card">
-      <div class="product-art">
-        <span class="product-badge">${product.badge}</span>
-        <div class="device device-${product.visual}">${product.visual === "laptop" ? "R." : product.visual === "phone" ? "✦" : "R."}</div>
-      </div>
+  <article class="product-card">
+    <div class="product-art">
+      <span class="product-badge">${product.badge || ""}</span>
+      <img
+        src="${product.image}"
+        alt="${product.name}"
+        class="product-image"
+      >
+    </div>
       <div class="product-info">
         <span class="product-category">${product.category} · ${product.condition}</span>
         <h3>${product.name}</h3>
