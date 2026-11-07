@@ -1,8 +1,5 @@
-// GANTI nomor WhatsApp di bawah dengan nomor tokomu.
-// Gunakan kode negara 62, tanpa tanda +, spasi, atau angka 0 di depan.
-// Contoh: 081234567890 menjadi 6281234567890.
-const WHATSAPP_NUMBER = "6281234567890";
 
+const WHATSAPP_NUMBER = "6285713162087";
 const products = [
   {
     id: 1, name: "Laptop Lenovo ThinkPad", category: "Laptop",
